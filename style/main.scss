@@ -1,5 +1,132 @@
-body{
+@font-face{
+src: url(../asset/font/IRANSansWeb_.number.woff2);
+font-family: "iran_san";
+}
+
+
+*{
+    font-family: iran_san;
+}
+
+body {
     margin: 0px;
     padding: 0px;
     direction: rtl;
-}
+    
+  }
+  
+
+// global class-----------------------------
+.flex{display: flex;  
+     justify-content:center;
+    align-items: center;}
+
+
+
+
+    //color -----------------
+    .yellow{
+        background:#fcbf16;
+    }
+
+  
+  /* menu----------------------------------- */
+  .menu{
+  
+  
+        .body_{
+            justify-content:space-between;
+            align-items: center;
+            
+
+
+            .right_box{
+                            width: 20px;
+                            padding: 14px 17px;
+                            font-size: 20px;
+                            cursor: pointer;
+                            text-decoration: none;
+
+                                span{    
+                                    position: relative;
+                                    top: -2px;
+                                    color: #fff;}
+            }
+
+
+            .center_box{
+
+                .body_btn{
+
+
+                    .btn:hover i{
+                        width: 60%;
+                    }
+
+
+
+                    .btn:hover a{
+                        color: #fcbf16;
+                        text-shadow: 0px 0px 0px #000;
+                    }
+                    .btn{
+                                
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+
+                    
+
+                        i{
+                                            
+                                    background: #fcbf16;
+                                    height: 2px;
+                                    width: 0%;
+                                    transition: all 0.6s;
+                         }
+                           
+                         
+                         a{
+                                font-size: 13px;
+                                margin: 0px 20px;
+                                text-decoration: none;
+                                cursor: pointer;
+                                text-shadow: 0px 0px 0px;
+                            
+                                transition: all 0.2s;
+                                position: relative;
+
+                            
+
+                    }
+
+                
+
+                  
+
+                }
+            }
+            }
+
+
+
+            .left_box{
+
+                        width: 40px;
+                        padding: 0px 7px;
+
+                        .logo_name{
+                        margin: 0px;
+                        font-family: initial;
+                        font-size: 40px;
+                        color: #fcbf16;
+                        }
+            }
+        }
+        
+
+
+  
+  }
