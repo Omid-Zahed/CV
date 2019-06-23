@@ -3,6 +3,11 @@
   font-family: "iran_san";
 }
 
+@font-face {
+  src: url(../asset/font/munzaav.ttf);
+  font-family: "munza";
+}
+
 * {
   font-family: iran_san;
 }
@@ -24,6 +29,13 @@ body {
 }
 
 /* menu----------------------------------- */
+.menu {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background: #fff;
+}
+
 .menu .body_ {
   justify-content: space-between;
   align-items: center;
@@ -93,12 +105,17 @@ body {
 }
 
 .slid .follow_me {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 100px;
   padding: 14px;
+}
+
+.slid .follow_me .box {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 20px;
 }
 
 .slid .follow_me a {
@@ -170,4 +187,131 @@ body {
   text-shadow: 0px 0px 5px #000;
   cursor: pointer;
   outline: unset;
+}
+
+.profile {
+  padding: 60px 40px;
+  background: url(../asset/img/pattern.svg) repeat;
+}
+
+.profile ._body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile ._body .right_box .image {
+  position: relative;
+}
+
+.profile ._body .right_box .image img {
+  position: relative;
+  z-index: 2;
+  box-shadow: -3px 0px 10px -3px #000;
+  border-radius: 10px;
+}
+
+.profile ._body .right_box .image .back_image {
+  box-shadow: -3px 0px 10px -3px #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 340px;
+  background: #fcbf16;
+  display: block;
+  position: absolute;
+  right: -30px;
+  bottom: -16px;
+}
+
+.profile ._body .left_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 60px;
+  max-width: 400px;
+}
+
+.profile ._body .left_box h2 {
+  font-family: munza;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 21px;
+  color: #0d374e;
+}
+
+.profile ._body .left_box b {
+  font-family: munza;
+}
+
+.profile ._body .left_box .line_1 {
+  background: #fcbf16;
+  width: 99px;
+  height: 2px;
+  margin-top: 9px;
+}
+
+.profile ._body .left_box .line_2 {
+  background: #fcbf16;
+  width: 139px;
+  height: 2px;
+  margin-top: 3px;
+}
+
+.profile ._body .left_box p {
+  font-size: 17px;
+  text-align: justify;
+  font-family: munza;
+  color: gray;
+}
+
+.profile ._body .left_box .item_box {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+}
+
+.profile ._body .left_box .item_box .el {
+  background: #fff;
+  width: 45%;
+  display: flex;
+  height: 150px;
+  transition: all 0.5s;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+.profile ._body .left_box .item_box .el i {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.profile ._body .left_box .item_box .el h4 {
+  margin: 0px;
+  font-family: munza;
+}
+
+.profile ._body .left_box .item_box .el p {
+  color: gray;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.profile ._body .left_box .item_box .el:hover {
+  box-shadow: 0px 0px 8px -4px;
+  border-radius: 8px;
+}
+
+.profile ._body .left_box button {
+  padding: 5px;
+  width: 120px;
+  font-size: 18px;
+  border: unset;
+  font-family: munza;
+  background: #fcbf16;
+  color: #fff;
+  text-shadow: 0px 0px 4px #000;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 4px 9px -4px #000;
 }
