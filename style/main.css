@@ -137,7 +137,7 @@ body {
 
 .slid ._body .slider_body {
   width: 100%;
-  background: url(../asset/img/back_slid.jpg);
+  background: url(../asset/img/light_background.jpg);
   height: 540px;
   position: relative;
   background-size: cover;
@@ -514,5 +514,49 @@ body {
   font-family: munza;
   text-shadow: 0px 0px 4px #000;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.label {
+  background: url(../asset/img/light_background.jpg);
+  margin: 40px 79px;
+  background-attachment: fixed;
+  background-position: -190px 580px;
+}
+
+.label ._body {
+  height: 240px;
+  background: rgba(19, 12, 12, 0.48);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.label ._body .info .titel {
+  font-family: munza;
+  color: #fcbf16;
+  font-size: 50px;
+  margin: 0px;
+  text-shadow: 0px 0px 9px #000;
+}
+
+.label ._body .info .message {
+  margin: 0px;
+  color: #fff;
+  text-shadow: 0px 0px 1px;
+  font-family: munza;
+  font-size: 34px;
+}
+
+.label ._body .btn {
+  font-family: munza;
+  font-size: 28px;
+  border-radius: 6px;
+  border: unset;
+  color: #fff;
+  background: #fcbf16;
+  text-shadow: 0px 0px 4px #000;
+  padding: 0px 20px;
+  outline: unset;
   cursor: pointer;
 }
