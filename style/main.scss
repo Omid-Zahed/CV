@@ -693,7 +693,7 @@ padding: 30px 0px;
     background: url(../asset/img/light_background.jpg);
     margin: 40px 79px;
     background-attachment: fixed;
-    background-position: -190px 580px;
+    background-repeat: space;
 ._body{
     height: 240px;
    background: rgba(19, 12, 12, 0.48);
@@ -744,6 +744,164 @@ padding: 30px 0px;
 }
 
 
+
+
+}
+
+
+
+
+//Story----------------------------------------------------
+.story{
+
+        background: #f7f8fc;
+        margin: 0px 80px;
+
+    ._body{
+        justify-content: start;
+        align-items: start;
+        padding: 30px 120px;
+        min-height: 500px;
+        flex-direction: column;
+        
+
+
+
+        h3{
+            font-family: munza;
+            position: relative;
+            font-size: 33px;
+            color: #0d374e;
+            margin-right: 10px;
+        }
+
+        h3::after, h3::before{content: "";
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            background: #fcbf16;
+            width: 100%;
+            height: 2px;
+            right: 0px;}
+          
+         
+        h3::before{ 
+            bottom: -14px;
+            width: unset;
+            left: 25%;
+            right: 25%;
+        }
+
+
+
+
+        .history{
+
+            display: flex;
+        
+           min-height: 500px;
+           width: 100%;
+            flex-direction: column;
+
+            .item{
+
+                display: flex;
+                margin-bottom:30px;
+             
+
+
+                .time{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        font-family: munza;
+                    }
+
+                }
+
+                .line{
+
+                   
+                    width: 2px;
+                    
+                    margin: 0px 36px;
+                    position: relative;
+                }
+
+                .line_A::before{
+                    content: "";
+                    position: absolute;
+                    background: gainsboro;
+                    top: 0px;
+                    bottom: -40px;
+                    width: 2px;
+                    z-index: 0;
+                }
+
+                .line::after{
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: #fcbf16;
+                    position: absolute;
+                    top: -3px;
+                    left: -9px;
+                    box-shadow: 0px 0px 0px 7px rgba(252, 191, 22, 0.33);
+                    animation-name: icon_btn;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                }
+
+
+
+                
+                  @keyframes icon_btn {
+                    0% { box-shadow: 0px 0px 0px 0px rgba(252, 191, 22, 0.33);
+                       
+                    }
+                     50% { box-shadow: 0px 0px 3px 10px rgba(252, 191, 22, 0.33);}
+                     100% { box-shadow: 0px 0px 0px 0px rgba(252, 191, 22, 0.33);}
+                  }
+
+                .box{
+                    width: 71%;
+                    padding: 0px 20px;
+                    background: #ffff;
+                    box-shadow: 2px 5px 7px -4px #cdced1;
+                    border-radius: 8px;
+                    border: 1px solid #c3c3c3;
+
+                    h2{
+                        font-family: munza;
+                        margin-bottom: -15px;
+                        color: #fcbf16;
+                        font-size: 32px;
+                        text-shadow: 0px 0px 3px #000;    
+                    }
+                    h6{
+                        margin: 0px;
+                        font-family: munza;
+                        font-size: 25px;
+                        color: gray;
+                    }
+                    p{
+                        margin: 0px;
+                        font-family: munza;
+                        padding: 5px 0px 20px 0px;
+                        font-size: 16px;
+
+                    }
+                }
+
+
+
+
+
+            }
+
+        }
+    }
 
 
 }
