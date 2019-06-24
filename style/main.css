@@ -326,6 +326,7 @@ body {
   padding: 0px 10px;
   flex-direction: column;
   font-family: munza;
+  padding-bottom: 80px;
 }
 
 .skill .body_ .titel h3 {
@@ -410,4 +411,108 @@ body {
   font-style: normal;
   font-family: munza;
   right: -27px;
+}
+
+.work_process {
+  padding: 30px 0px;
+}
+
+.work_process ._body {
+  padding: 0px 10px;
+  flex-direction: column;
+  font-family: munza;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.work_process ._body .titel h3 {
+  font-family: munza;
+  position: relative;
+  font-size: 23px;
+  color: #0d374e;
+}
+
+.work_process ._body .titel h3::after, .work_process ._body .titel h3::before {
+  content: "";
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  background: #fcbf16;
+  width: 100%;
+  height: 2px;
+  right: 0px;
+}
+
+.work_process ._body .titel h3::before {
+  bottom: -14px;
+  width: unset;
+  left: 25%;
+  right: 25%;
+}
+
+.work_process ._body p {
+  font-family: munza;
+  max-width: 400px;
+  margin-top: 6px;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+.work_process ._body .item_body {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_process ._body .item_body .item:hover {
+  top: -10px;
+}
+
+.work_process ._body .item_body .item {
+  top: 0px;
+  position: relative;
+  transition: all 0.4s;
+  width: 230px;
+  margin: 0px 10px;
+  min-height: 200px;
+  border: 2px solid rgba(212, 210, 210, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: -2px -1px 12px -8px;
+  padding: 25px 10px 10px 8px;
+}
+
+.work_process ._body .item_body .item .icon {
+  font-size: 40px;
+  color: #093273;
+}
+
+.work_process ._body .item_body .item .titel_ {
+  text-align: center;
+  font-family: munza;
+  font-size: 18px;
+  margin: 0px;
+  margin-top: 19px;
+}
+
+.work_process ._body .item_body .item .link {
+  margin-bottom: 10px;
+  background: #fcbf16;
+  padding: 5px 40px;
+  border-radius: 6px;
+  color: white;
+  font-family: munza;
+  text-shadow: 0px 0px 4px #000;
+  text-decoration: none;
+  cursor: pointer;
 }
