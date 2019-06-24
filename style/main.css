@@ -694,3 +694,13 @@ body {
   padding: 5px 0px 20px 0px;
   font-size: 16px;
 }
+
+.story ._body #btn_rezo {
+  font-family: munza;
+  border: 1px solid #fcbf16;
+  font-size: 20px;
+  cursor: pointer;
+  background: #fff;
+  text-decoration: none;
+  padding: 1px 12px;
+}
