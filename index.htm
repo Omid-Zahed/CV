@@ -7,6 +7,8 @@
     <title>Omid Zahed</title>
 
     <link rel="stylesheet" href="style/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="lib/icofont.min.css">
 </head>
 <body>
@@ -21,14 +23,14 @@
         <div class="center_box flex">
             <div class="body_btn flex">
 
-                <div class="btn"><a>Home </a><i></i></div>
-                <div class="btn"><a>مهارت </a><i></i></div>
-                <div class="btn"><a>پروسه </a><i></i></div>
-                <div class="btn"><a>سابقه </a><i></i></div>
-                <div class="btn"><a>پروفایل </a><i></i></div>
-                <div class="btn"><a>پروژه </a><i></i></div>
+                <div class="btn"><a href="#home">Home </a><i></i></div>
+                <div class="btn"><a href="#profile">پروفایل </a><i></i></div>
+                <div class="btn"><a href="#skill">مهارت </a><i></i></div>
+                <div class="btn" ><a href="#work_process">پروسه </a><i></i></div>
+                <div class="btn"><a href="#story">سابقه </a><i></i></div>
+                <div class="btn"><a href="#last_work">پروژه </a><i></i></div>
 
-
+                
 
             </div>
 
@@ -38,7 +40,7 @@
     </div>
 </section>
 
-<section class="slid">
+<section class="slid" id="home">
 
 
 <div class="follow_me">
@@ -55,13 +57,27 @@
      <div class="slider_body">
         <div></div>
         <img class="img_user" src="asset/img/slid_2.jpg">
-        <div class="info flex">
+        <div class="info flex" >
 
             <div class="text_box">
-            <h1>امید زاهد هستم </h1>
-            <h2>یک برنامه نویس وب !!!</h2>
-            <p>من واسه شما سایت طراحی میکنم :)</p>
-            <button>نمایش پروفایل</button>
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">امید زاهد هستم </h1>
+            <h2
+            data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+            >یک برنامه نویس وب !!!</h2>
+            <p
+            data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+            >من واسه شما سایت طراحی میکنم :)</p>
+            <button
+            data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+            >نمایش پروفایل</button>
         </div>
         </div>
      </div>
@@ -69,12 +85,12 @@
 </section>
 
 
-<section class="profile">
+<section class="profile" id="profile">
 <div class="_body flex">
     <div class="right_box">
         <div class="image">
-            <img src="asset/img/user.png">
-            <span class="back_image"></span>
+            <img id="user_img" src="asset/img/user.png">
+            <span class="back_image" id="back_imag_id"></span>
         </div>
 
     </div>
@@ -97,10 +113,10 @@
                                 </div>
                       </div>
 
-                        <div class="el">
+                        <div class="el select">
                                 <i class="icofont-learn"></i>
                                 <div>
-                                    <h4>یادگیری</h4>
+                                    <h4 >یادگیری</h4>
                                     <p>از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی</p>
                                 </div>
                         </div>
@@ -120,7 +136,7 @@
 
 
 
-<section class="skill">
+<section class="skill" id="skill">
 
 <div class="body_ flex">
     <div class="titel">
@@ -206,7 +222,7 @@
 </section>
 
 
-<section class="work_process">
+<section class="work_process" id="work_process">
     <div class="_body">
         <div class="titel">
             <h3>مراحل طراحی سایت</h3>
@@ -217,21 +233,23 @@
 
 
         <div class="item_body">
-            <div class="item">
+            <div class="item" data-aos="fade-up-left" >
                 <i class="icofont-file-eps  icon"></i>
                 <h2 class="titel_">مرحله اول</h2>
                 <p> بزرگترین مشکلاتی که بزرگترین مشکلاتی که</p>
                 <a class="link">اطلاعات بیشتر</a>
 
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
                 <i class="icofont-file-code icon"></i>
                 <h2 class="titel_">مرحله دوم</h2>
                 <p> بزرگترین مشکلاتی که بزرگترین مشکلاتی که</p>
                 <a class="link">اطلاعات بیشتر</a>
 
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up-right"
+            
+            >
                 <i class="icofont-web icon"></i>
                 <h2 class="titel_">مرحله سوم</h2>
                 <p> بزرگترین مشکلاتی که بزرگترین مشکلاتی که</p>
@@ -252,18 +270,23 @@
 
 <section class="label">
 <div class="_body">
-<div class="info">
+<div class="info" data-aos="fade-left"
+data-aos-easing="linear"
+data-aos-duration="1500">
     <h2 class="titel">همکاری</h2>
     <p class="message">من آماده همکاری با شما هستم</p>
 </div>
-<div ><button class="btn">درخواست همکاری</button></div>
+<div ><button class="btn" 
+    data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000" >درخواست همکاری</button></div>
 
 </div>
 </section>
 
 
 
-<section class="story">
+<section class="story" id="story">
 <div class="_body flex">
 <h3>تجربه کاری من</h3>
 
@@ -331,8 +354,62 @@
 
 
 </section>
-<section class="last_work"></section>
-<section class="footer"></section>
+
+
+
+<section class="last_work" id="last_work">
+    <div class="_body">
+        <div class="titel">
+            <h2>پروژه های اخیر</h2>
+            <p> مجله در ستون و سطرآنچن بلکه روزنامه و مجله د بلکه روزنامه و مجله در ستون و سطرآنچنر ستون و سطرآنچنایپسوم متن سمتون بلکه روزنمی باشد.</p>
+        </div>
+
+
+        <div class="item_box">
+            <div class="item big">
+                <img src="asset/img/proj/big.jpg">
+
+            </div>
+            <div class="item med"><img src="asset/img/proj/website-Speed.png"></div>
+            <div class="item"> <img src="asset/img/proj/625942-best-web-hosting-services.jpg"></div>
+            <div class="item"><img src="asset/img/proj/images (1).jpg"></div>
+            <div class="item"><img src="asset/img/proj/seo-search-engine-optimization-ss-1920-800x450.jpg"></div>
+            <div class="item"><img src="asset/img/proj/post-img.jpeg"></div>
+            <div class="item"><img src="asset/img/proj/3.png"></div>
+            <div class="item"><img src="asset/img/proj/2.jpg"></div>
+          
+            
+            
+
+
+
+    </div>
+</section>
+<section class="footer ">
+
+
+    <div class="_body flex">
+<div class="company">
+<img src="asset/img/company/rahnavard.jpg">
+<img src="asset/img/company/emdaditlogologin.png">
+
+</div>
+
+<h1 class="logo_h">.O</h1>
+<p class="matn">ن و سطرآنچن بلکه روزنامه و مجله د بلکه روزنامه و مجله در ستون و سطرآنچنر ستون و سطرآنچنایپسوم متن سمتون بلکه روزنمی باشد.</p>
+<div class="box">
+        <a><i class="icofont-twitter"></i></a>
+        <a><i class="icofont-telegram"></i></a>
+        <a><i class="icofont-stack-overflow"></i></a>
+        <a><i class="icofont-github"></i></a>
+        <a><i class="icofont-instagram"></i></a>
+        <a><i class="icofont-linkedin"></i></a>
+    </div>
+<hr>
+<span class="copy_r">کلیه حقوق متعلق به «omid98.ir» است و هرگونه بهره‌برداری از آن با ذکر منبع و لینک فعال مجاز است</span>
+
+</div>
+</section>
 
 
 
@@ -343,4 +420,12 @@
 
 <script src="lib/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+    setTimeout(() => {
+        AOS.init();
+    }, 1000);
+   
+  </script>
 </html>
